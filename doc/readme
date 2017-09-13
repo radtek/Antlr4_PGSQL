@@ -1,0 +1,78 @@
+TCP connect
+
+////////////////客户端发送数据////////////////
+SSLRequestLength;8
+error:  SSL80877103
+
+////////////////客户端发送数据////////////////
+start
+StartupMessage
+Length;82
+Parameter name:user
+Parameter value:postgres
+Parameter name:database
+Parameter value:postgres
+Parameter name:application_name
+Parameter value:pgAdmin III - 浏览器
+
+
+////////////////客户端发送数据////////////////
+PasswordMessage
+Length;41
+Password;md54ac9f057945b1c9e91f0aebbc828fcc0
+
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+Query
+Length;778
+Simple_Query;SELECT db.oid, datname, db.dattablespace AS spcoid, spcname, datallowconn, datacl, pg_encoding_to_char(encoding) AS serverencoding, pg_get_userbyid(datdba) AS datowner,has_database_privilege(db.oid, 'CREATE') as cancreate, 
+current_setting('default_tablespace') AS default_tablespace, 
+descr.description
+, db.datconnlimit as connectionlimit, db.datcollate as collate, db.datctype as ctype,
+(SELECT array_agg(label) FROM pg_shseclabel sl1 WHERE sl1.objoid=db.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_shseclabel sl2 WHERE sl2.objoid=db.oid) AS providers  FROM pg_database db
+  LEFT OUTER JOIN pg_tablespace ta ON db.dattablespace=ta.OID
+  LEFT OUTER JOIN pg_shdescription descr ON (db.oid=descr.objoid AND descr.classoid='pg_database'::regclass)
+ ORDER BY datname
+(root (sql_statements SELECT DB .OID , DATNAME , DB .DATTABLESPACE AS SPCOID , SPCNAME , DATALLOWCONN , DATACL , PG_ENCODING_TO_CHAR ( ENCODING ) AS SERVERENCODING , PG_GET_USERBYID ( DATDBA ) AS DATOWNER , HAS_DATABASE_PRIVILEGE ( DB .OID , 'CREATE' ) AS CANCREATE , CURRENT_SETTING ( 'DEFAULT_TABLESPACE' ) AS DEFAULT_TABLESPACE , DESCR .DESCRIPTION , DB .DATCONNLIMIT AS CONNECTIONLIMIT , DB .DATCOLLATE AS COLLATE , DB .DATCTYPE AS CTYPE , ( SELECT ARRAY_AGG ( LABEL ) FROM PG_SHSECLABEL SL1 WHERE SL1 .OBJOID = DB .OID ) AS LABELS , ( SELECT ARRAY_AGG ( PROVIDER ) FROM PG_SHSECLABEL SL2 WHERE SL2 .OBJOID = DB .OID ) AS PROVIDERS FROM PG_DATABASE DB LEFT OUTER JOIN PG_TABLESPACE TA ON DB .DATTABLESPACE = TA .OID LEFT OUTER JOIN PG_SHDESCRIPTION DESCR ON ( DB .OID = DESCR .OBJOID AND DESCR .CLASSOID = 'PG_DATABASE' : : REGCLASS ) ORDER BY DATNAME) <EOF>)
+
+
+
+sqlname
+
+tablename
+
+columnname
+
+function
+
+///////////////////////////////////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////
+
+////////////////客户端发送数据////////////////

@@ -1,0 +1,5 @@
+/root/Desktop/Git/Antlr4_PgSql/build/CMakeFiles/rebuild_cache.dir
+/root/Desktop/Git/Antlr4_PgSql/build/CMakeFiles/edit_cache.dir
+/root/Desktop/Git/Antlr4_PgSql/build/src/CMakeFiles/rebuild_cache.dir
+/root/Desktop/Git/Antlr4_PgSql/build/src/CMakeFiles/edit_cache.dir
+/root/Desktop/Git/Antlr4_PgSql/build/src/CMakeFiles/MYHELLO.dir

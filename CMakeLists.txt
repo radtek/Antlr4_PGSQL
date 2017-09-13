@@ -1,0 +1,5 @@
+PROJECT (MYHELLO)
+SET(CMAKE_CXX_COMPILER "/usr/local/gcc-6.4.0/bin/g++")
+add_compile_options(-std=c++11)
+ add_compile_options(-g)
+ADD_SUBDIRECTORY(src)
